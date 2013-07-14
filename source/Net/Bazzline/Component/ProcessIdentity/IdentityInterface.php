@@ -7,7 +7,7 @@
 namespace Net\Bazzline\Component\ProcessIdentity;
 
 /**
- * Class IndentityInterface
+ * Class IdentityInterface
  *
  * @package Net\Bazzline\Component\ProcessIdentity
  * @author stev leibelt <artodeto@arcor.de>
