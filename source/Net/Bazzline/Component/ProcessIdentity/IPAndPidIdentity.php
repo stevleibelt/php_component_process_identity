@@ -13,13 +13,17 @@ namespace Net\Bazzline\Component\ProcessIdentity;
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-07-11
  */
-class IPAndPidIdentity implements IdentityInterface
+class IPAndPidIdentity extends IdentityAbstract
 {
     /**
      * {@inheritDoc}
      */
     public function getId()
     {
-        return $_SERVER['SERVER_ADDR'] . '_' . getmypid();
+        if (is_null($this->id)) {
+            $this->id = $_SERVER['SERVER_ADDR'] . '_' . getmypid();
+        }
+
+        return $this->id;
     }
 }

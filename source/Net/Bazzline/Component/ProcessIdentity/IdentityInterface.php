@@ -21,4 +21,12 @@ interface IdentityInterface
      * @since 2013-07-11
      */
     public function getId();
+
+    /**
+     * @param string $id
+     * @return $this
+     * @author stev leibelt <artodeto@arcor.de>
+     * @since 2013-07-17
+     */
+    public function setId($id);
 }

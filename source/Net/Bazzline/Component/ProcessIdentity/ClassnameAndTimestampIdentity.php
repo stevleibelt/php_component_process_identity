@@ -13,15 +13,8 @@ namespace Net\Bazzline\Component\ProcessIdentity;
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-07-11
  */
-class ClassnameAndTimestampIdentity implements IdentityInterface
+class ClassnameAndTimestampIdentity extends IdentityAbstract
 {
-    /**
-     * @var string
-     * @author stev leibelt <artodeto@arcor.de>
-     * @since 2013-07-11
-     */
-    protected $id;
-
     /**
      * {@inheritDoc}
      */
