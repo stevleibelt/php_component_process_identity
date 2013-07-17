@@ -25,6 +25,7 @@ interface IdentityInterface
     /**
      * @param string $id
      * @return $this
+     * @throws \RuntimeException - if you try to set a id that already exists
      * @author stev leibelt <artodeto@arcor.de>
      * @since 2013-07-17
      */

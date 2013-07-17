@@ -6,14 +6,16 @@
 
 namespace Net\Bazzline\Component\ProcessIdentity;
 
+use RuntimeException;
+
 /**
- * Class IdentityAbstract
+ * Class Identity
  *
  * @package Net\Bazzline\Component\ProcessIdentity
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-07-17
  */
-abstract class IdentityAbstract implements IdentityInterface
+class Identity implements IdentityInterface
 {
     /**
      * @var string
@@ -25,8 +27,25 @@ abstract class IdentityAbstract implements IdentityInterface
     /**
      * {@inheritDoc}
      */
+    public function getId()
+    {
+        if (is_null($this->id)) {
+            $this->setId($_SERVER['SERVER_ADDR'] . '_' . getmypid());
+        }
+
+        return $this->id;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function setId($id)
     {
+        if (!is_null($this->id)) {
+            throw new RuntimeException(
+                'Id already set.'
+            );
+        }
         $this->id = $id;
 
         return $this;
