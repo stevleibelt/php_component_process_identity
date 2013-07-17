@@ -17,7 +17,7 @@ You can implement the interface or extend the implemented class for your wished.
 
 # Version
 
-* 1.0.0 - 2013-07-17
+* [1.0.0](https://github.com/stevleibelt/php_component_process_identity/tree/1.0.0 "release 1.0.0") - 2013-07-17
     * Interfaces are stable
     * Implementation is available
     * Covered with unittests
