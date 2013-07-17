@@ -43,7 +43,7 @@ class Identity implements IdentityInterface
     {
         if (!is_null($this->id)) {
             throw new RuntimeException(
-                'Id already set.'
+                'Id already set'
             );
         }
         $this->id = $id;

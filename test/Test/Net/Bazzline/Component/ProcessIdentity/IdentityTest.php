@@ -62,7 +62,22 @@ class IdentityTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return IPAndPidIdentity
+     * @expectedException \RuntimeException
+     * @expectedExceptionMessage Id already set
+     * @author stev leibelt <artodeto@arcor.de>
+     * @since 2013-07-17
+     */
+    public function testSetIdTwice()
+    {
+        $identity = $this->getNewIdentity();
+        $id = 'exampleId';
+
+        $identity->setId($id);
+        $identity->setId($id);
+    }
+
+    /**
+     * @return Identity
      * @author stev leibelt <artodeto@arcor.de>
      * @since 2013-07-17
      */
