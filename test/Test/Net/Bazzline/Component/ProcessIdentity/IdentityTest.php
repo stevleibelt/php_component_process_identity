@@ -6,17 +6,17 @@
 
 namespace Test\Net\Bazzline\Component\ProcessIdentity;
 
-use Net\Bazzline\Component\ProcessIdentity\IPAndPidIdentity;
+use Net\Bazzline\Component\ProcessIdentity\Identity;
 use PHPUnit_Framework_TestCase;
 
 /**
- * Class IPAndPidIdentity
+ * Class IdentityTest
  *
  * @package Test\Net\Bazzline\Component\ProcessIdentity
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-07-17
  */
-class IPAndPidIdentityTest extends PHPUnit_Framework_TestCase
+class IdentityTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @author stev leibelt <artodeto@arcor.de>
@@ -68,6 +68,6 @@ class IPAndPidIdentityTest extends PHPUnit_Framework_TestCase
      */
     private function getNewIdentity()
     {
-        return new IPAndPidIdentity();
+        return new Identity();
     }
 }
