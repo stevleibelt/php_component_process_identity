@@ -13,7 +13,7 @@ namespace Net\Bazzline\Component\ProcessIdentity;
  * @author stev leibelt <artodeto@arcor.de>
  * @since 2013-07-11
  */
-class IPAndPidIdentity extends IdentityAbstract
+class IPAndPidIdentity extends Identity
 {
     /**
      * {@inheritDoc}
