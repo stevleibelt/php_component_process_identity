@@ -25,7 +25,7 @@ class Identity implements IdentityInterface
     protected $id;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getId()
     {
@@ -37,7 +37,7 @@ class Identity implements IdentityInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function setId($id)
     {
