@@ -1,6 +1,6 @@
 <?php
 /**
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-07-17 
  */
 
@@ -12,14 +12,14 @@ use RuntimeException;
  * Class Identity
  *
  * @package Net\Bazzline\Component\ProcessIdentity
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-07-17
  */
 class Identity implements IdentityInterface
 {
     /**
      * @var string
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     protected $id;

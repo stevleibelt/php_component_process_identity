@@ -1,6 +1,6 @@
 <?php
 /**
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-07-17 
  */
 
@@ -13,13 +13,13 @@ use PHPUnit_Framework_TestCase;
  * Class IdentityTest
  *
  * @package Test\Net\Bazzline\Component\ProcessIdentity
- * @author stev leibelt <artodeto@arcor.de>
+ * @author stev leibelt <artodeto@bazzline.net>
  * @since 2013-07-17
  */
 class IdentityTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     protected function setUp()
@@ -28,7 +28,7 @@ class IdentityTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     protected function tearDown()
@@ -37,7 +37,7 @@ class IdentityTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     public function testGetId()
@@ -49,7 +49,7 @@ class IdentityTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     public function testSetAndGetId()
@@ -64,7 +64,7 @@ class IdentityTest extends PHPUnit_Framework_TestCase
     /**
      * @expectedException \RuntimeException
      * @expectedExceptionMessage Id already set
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     public function testSetIdTwice()
@@ -78,7 +78,7 @@ class IdentityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @return Identity
-     * @author stev leibelt <artodeto@arcor.de>
+     * @author stev leibelt <artodeto@bazzline.net>
      * @since 2013-07-17
      */
     private function getNewIdentity()
